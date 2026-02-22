@@ -1,17 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Primera Página</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arreglos con Globos | Agenda por WhatsApp</title>
+  <meta name="description" content="Arreglos con globos para cumpleaños, baby showers y eventos. Servicio al cliente excepcional. Agenda fácil por WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">🎈</div>
+        <div class="brand__text">
+          <strong>Tu Negocio de Globos</strong>
+          <span>Decoración • Detalles • Eventos</span>
+        </div>
+      </div>
 
-  <h1>Bienvenido a mi página web 🎉</h1>
-  <p>Esta es mi primera web publicada con GitHub.</p>
-  <button onclick="saludo()">Haz clic aquí</button>
+      <a class="btn btn--ghost" href="#portfolio">Ver portafolio</a>
+    </div>
+  </header>
 
-<script src="script.js"></script>
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Bienvenidos ✨</p>
+          <h1>Arreglos con globos que se sienten especiales.</h1>
+          <p class="hero__subtitle">
+            Si es tu primera vez aquí: ¡qué gusto tenerte! Nuestro <strong>servicio al cliente es nuestra mayor fortaleza</strong>.
+            Te asesoramos, te escuchamos y cuidamos cada detalle para que tu sorpresa quede perfecta.
+          </p>
 
+          <div class="hero__cta">
+            <a class="btn btn--primary" id="whatsappBtn" href="#" target="_blank" rel="noopener">
+              💬 Escríbenos por WhatsApp
+            </a>
+            <a class="btn btn--soft" href="#pasos">Cómo agendar</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="metaCard">
+              <span class="metaCard__title">Respuesta rápida</span>
+              <span class="metaCard__desc">Atención amable y clara</span>
+            </div>
+            <div class="metaCard">
+              <span class="metaCard__title">Diseños a tu gusto</span>
+              <span class="metaCard__desc">Colores, tema y ocasión</span>
+            </div>
+            <div class="metaCard">
+              <span class="metaCard__title">Entrega / Pickup</span>
+              <span class="metaCard__desc">Coordinación sencilla</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Vista previa">
+          <div class="card">
+            <div class="card__top">
+              <div class="sparkle" aria-hidden="true">✨</div>
+              <h2>¿Listo para sorprender?</h2>
+              <p>
+                Cuéntanos la fecha, la ocasión y tu idea. Te recomendamos el tamaño, colores y opciones según tu presupuesto.
+              </p>
+            </div>
+            <div class="card__bottom">
+              <button class="chip" type="button">Cumpleaños</button>
+              <button class="chip" type="button">Baby Shower</button>
+              <button class="chip" type="button">Aniversario</button>
+              <button class="chip" type="button">Graduación</button>
+              <button class="chip" type="button">San Valentín</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 steps -->
+    <section class="section" id="pasos">
+      <div class="container">
+        <div class="section__head">
+          <h2>3 pasos fáciles para agendar</h2>
+          <p>Rápido, claro y sin complicaciones.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="step">
+            <div class="step__num">1</div>
+            <h3>Escríbenos por WhatsApp</h3>
+            <p>Envíanos la fecha, la ocasión y si tienes un tema o colores en mente.</p>
+          </article>
+
+          <article class="step">
+            <div class="step__num">2</div>
+            <h3>Te mandamos opciones</h3>
+            <p>Te sugerimos diseños y precios. Ajustamos detalles hasta que quedes feliz.</p>
+          </article>
+
+          <article class="step">
+            <div class="step__num">3</div>
+            <h3>Confirmas y listo</h3>
+            <p>Confirmamos horario, entrega/pickup y dejamos todo preparado para tu día especial.</p>
+          </article>
+        </div>
+
+        <div class="center">
+          <a class="btn btn--primary" id="whatsappBtn2" href="#" target="_blank" rel="noopener">
+            💬 Agendar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section section--muted" id="portfolio">
+      <div class="container">
+        <div class="section__head">
+          <h2>Portafolio</h2>
+          <p>Estamos subiendo nuevas fotos muy pronto. Aquí tendrás una vista de nuestros trabajos.</p>
+        </div>
+
+        <div class="portfolio">
+          <div class="ph">
+            <div class="ph__img">📷</div>
+            <div class="ph__text">
+              <strong>Foto #1</strong>
+              <span>Próximamente</span>
+            </div>
+          </div>
+          <div class="ph">
+            <div class="ph__img">📷</div>
+            <div class="ph__text">
+              <strong>Foto #2</strong>
+              <span>Próximamente</span>
+            </div>
+          </div>
+          <div class="ph">
+            <div class="ph__img">📷</div>
+            <div class="ph__text">
+              <strong>Foto #3</strong>
+              <span>Próximamente</span>
+            </div>
+          </div>
+          <div class="ph">
+            <div class="ph__img">📷</div>
+            <div class="ph__text">
+              <strong>Foto #4</strong>
+              <span>Próximamente</span>
+            </div>
+          </div>
+          <div class="ph">
+            <div class="ph__img">📷</div>
+            <div class="ph__text">
+              <strong>Foto #5</strong>
+              <span>Próximamente</span>
+            </div>
+          </div>
+          <div class="ph">
+            <div class="ph__img">📷</div>
+            <div class="ph__text">
+              <strong>Foto #6</strong>
+              <span>Próximamente</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="hint">
+          Tip: cuando tengas fotos, crea una carpeta <strong>images</strong> y cambia estos cuadros por <code>&lt;img src="images/tu-foto.jpg"&gt;</code>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section__head">
+          <h2>Testimonios</h2>
+          <p>Lo que nuestros clientes dicen (puedes editar estos textos cuando tengas reseñas reales).</p>
+        </div>
+
+        <div class="grid3">
+          <article class="quote">
+            <p>“Excelente atención. Me ayudaron a elegir colores y quedó hermoso. Súper recomendado.”</p>
+            <div class="quote__by">— Cliente feliz ⭐⭐⭐⭐⭐</div>
+          </article>
+
+          <article class="quote">
+            <p>“Respondieron rápido por WhatsApp y el arreglo quedó igual a como lo imaginé. Gracias!”</p>
+            <div class="quote__by">— Cliente satisfecha ⭐⭐⭐⭐⭐</div>
+          </article>
+
+          <article class="quote">
+            <p>“Muy buen servicio al cliente y puntualidad. Perfecto para sorprender.”</p>
+            <div class="quote__by">— Cliente encantado ⭐⭐⭐⭐⭐</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Tu Negocio de Globos</strong>
+        <p class="muted">Servicio al cliente primero. Gracias por visitarnos.</p>
+      </div>
+
+      <a class="btn btn--primary btn--small" id="whatsappBtn3" href="#" target="_blank" rel="noopener">
+        💬 WhatsApp
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
