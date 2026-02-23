@@ -1,8 +1,8 @@
 diff --git a/index.html b/index.html
-index 6ab5609e0eff83ddb8f0997714a1ff5e4ac2cee3..0b0189ba9eed0060ed61241ac821320e1816aecc 100644
+index 6ab5609e0eff83ddb8f0997714a1ff5e4ac2cee3..b0bb9d5945a08cabad62c87feec9b32e8cd4c399 100644
 --- a/index.html
 +++ b/index.html
-@@ -1,222 +1,259 @@
+@@ -1,222 +1,260 @@
  <!DOCTYPE html>
  <html lang="es">
  <head>
@@ -13,21 +13,22 @@ index 6ab5609e0eff83ddb8f0997714a1ff5e4ac2cee3..0b0189ba9eed0060ed61241ac821320e
 -  <meta name="description" content="Arreglos con globos para cumpleaños, baby showers y eventos. Servicio al cliente excepcional. Agenda fácil por WhatsApp." />
 +  <meta name="description" content="Arreglos con globos para cumpleaños, baby showers y eventos. Cotiza rápido por WhatsApp y agenda tu fecha con atención personalizada." />
 +  <meta name="robots" content="index,follow" />
-+  <link rel="canonical" href="https://tudominio.com/" />
++  <link rel="canonical" href="/" />
 +
 +  <!-- Open Graph -->
 +  <meta property="og:type" content="website" />
 +  <meta property="og:locale" content="es_ES" />
 +  <meta property="og:title" content="Arreglos con Globos | Agenda por WhatsApp" />
 +  <meta property="og:description" content="Diseños personalizados para cumpleaños y eventos. Atención rápida y amable por WhatsApp." />
-+  <meta property="og:url" content="https://tudominio.com/" />
-+  <meta property="og:image" content="https://tudominio.com/images/og-cover.jpg" />
++  <meta property="og:url" content="/" />
++  <meta property="og:image" content="/images/og-cover.svg" />
++  <meta property="og:image:alt" content="Portada de arreglos con globos de Tu Negocio de Globos" />
 +
 +  <!-- Twitter Card -->
 +  <meta name="twitter:card" content="summary_large_image" />
 +  <meta name="twitter:title" content="Arreglos con Globos | Agenda por WhatsApp" />
 +  <meta name="twitter:description" content="Cotiza y agenda tus arreglos con globos en minutos por WhatsApp." />
-+  <meta name="twitter:image" content="https://tudominio.com/images/og-cover.jpg" />
++  <meta name="twitter:image" content="/images/og-cover.svg" />
 +
    <link rel="stylesheet" href="styles.css" />
 +
@@ -89,7 +90,7 @@ index 6ab5609e0eff83ddb8f0997714a1ff5e4ac2cee3..0b0189ba9eed0060ed61241ac821320e
  
            <div class="hero__cta">
 -            <a class="btn btn--primary" id="whatsappBtn" href="#" target="_blank" rel="noopener">
-+            <a class="btn btn--primary js-wa-link" id="whatsappBtn" href="https://wa.me/17865992191?text=Hola%21%20Estoy%20interesado%2Fa%20en%20un%20arreglo%20con%20globos.%20%C2%BFMe%20ayudas%20con%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
++            <a class="btn btn--primary js-wa-link" id="whatsappBtn" data-wa-message="Hola! Estoy interesado/a en un arreglo con globos. ¿Me ayudas con información y disponibilidad?" href="https://wa.me/17865992191?text=Hola%21%20Estoy%20interesado%2Fa%20en%20un%20arreglo%20con%20globos.%20%C2%BFMe%20ayudas%20con%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
                💬 Escríbenos por WhatsApp
              </a>
              <a class="btn btn--soft" href="#pasos">Cómo agendar</a>
@@ -177,7 +178,7 @@ index 6ab5609e0eff83ddb8f0997714a1ff5e4ac2cee3..0b0189ba9eed0060ed61241ac821320e
 -          <a class="btn btn--primary" id="whatsappBtn2" href="#" target="_blank" rel="noopener">
 -            💬 Agendar por WhatsApp
 -          </a>
-+          <a class="btn btn--primary js-wa-link" id="whatsappBtn2" href="https://wa.me/17865992191?text=Hola%21%20Quiero%20agendar%20un%20arreglo%20con%20globos.%20%C2%BFQu%C3%A9%20fechas%20tienen%20disponibles%3F" target="_blank" rel="noopener noreferrer">💬 Agendar por WhatsApp</a>
++          <a class="btn btn--primary js-wa-link" id="whatsappBtn2" data-wa-message="Hola! Quiero agendar un arreglo con globos. ¿Qué fechas tienen disponibles?" href="https://wa.me/17865992191?text=Hola%21%20Quiero%20agendar%20un%20arreglo%20con%20globos.%20%C2%BFQu%C3%A9%20fechas%20tienen%20disponibles%3F" target="_blank" rel="noopener noreferrer">💬 Agendar por WhatsApp</a>
          </div>
        </div>
      </section>
@@ -298,7 +299,7 @@ index 6ab5609e0eff83ddb8f0997714a1ff5e4ac2cee3..0b0189ba9eed0060ed61241ac821320e
 +        </div>
 +        <div class="business-cta">
 +          <p class="microcopy">✅ Cotización en menos de 10 minutos en horario laboral.</p>
-+          <a class="btn btn--primary js-wa-link" id="whatsappBtn3" href="https://wa.me/17865992191?text=Hola%21%20Quiero%20cotizar%20un%20arreglo%20con%20globos.%20Mi%20fecha%20es%3A" target="_blank" rel="noopener noreferrer">💬 Cotizar ahora</a>
++          <a class="btn btn--primary js-wa-link" id="whatsappBtn3" data-wa-message="Hola! Quiero cotizar un arreglo con globos. Mi fecha es:" href="https://wa.me/17865992191?text=Hola%21%20Quiero%20cotizar%20un%20arreglo%20con%20globos.%20Mi%20fecha%20es%3A" target="_blank" rel="noopener noreferrer">💬 Cotizar ahora</a>
 +        </div>
        </div>
      </section>
@@ -340,7 +341,7 @@ index 6ab5609e0eff83ddb8f0997714a1ff5e4ac2cee3..0b0189ba9eed0060ed61241ac821320e
    </main>
  
 -  <!-- Footer -->
-+  <a class="floating-wa js-wa-link" href="https://wa.me/17865992191?text=Hola%21%20Estoy%20interesado%2Fa%20en%20un%20arreglo%20con%20globos" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para cotizar">💬</a>
++  <a class="floating-wa js-wa-link" data-wa-message="Hola! Estoy interesado/a en un arreglo con globos" href="https://wa.me/17865992191?text=Hola%21%20Estoy%20interesado%2Fa%20en%20un%20arreglo%20con%20globos" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para cotizar">💬</a>
 +
    <footer class="footer">
      <div class="container footer__inner">
