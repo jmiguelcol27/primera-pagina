@@ -1,8 +1,8 @@
 diff --git a/script.js b/script.js
-index 6a56059e3b5e074672fa8df7b66cad4de8d9e9a9..db47b21c94b84c95d35c22d548de19f3f3f9c372 100644
+index 6a56059e3b5e074672fa8df7b66cad4de8d9e9a9..26ae97f815e5723a2b3418fc1868eaeb78251918 100644
 --- a/script.js
 +++ b/script.js
-@@ -1,21 +1,30 @@
+@@ -1,21 +1,36 @@
 -// WhatsApp link (con mensaje inicial)
 -const phoneE164 = "17865992191"; // +1 786 599 2191 (sin +, sin espacios)
 -const defaultMsg = "Hola! Estoy interesado/a en un arreglo con globos. ¿Me ayudas con información y disponibilidad?";
@@ -18,8 +18,14 @@ index 6a56059e3b5e074672fa8df7b66cad4de8d9e9a9..db47b21c94b84c95d35c22d548de19f3
 -  const el = document.getElementById(id);
 -  if (el) el.href = waLink;
 +document.querySelectorAll(".js-wa-link").forEach((link) => {
-+  const customMessage = link.dataset.message;
-+  link.href = makeWaLink(customMessage);
++  const customMessage = link.dataset.waMessage || link.dataset.message;
++  const currentHref = link.getAttribute("href") || "";
++
++  if (customMessage) {
++    link.href = makeWaLink(customMessage);
++  } else if (!currentHref || currentHref === "#") {
++    link.href = makeWaLink(defaultMsg);
++  }
 +
 +  link.addEventListener("click", () => {
 +    if (typeof window.gtag === "function") {
