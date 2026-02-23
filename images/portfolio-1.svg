@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='640' height='420' viewBox='0 0 640 420' role='img' aria-label='Diseño de globos'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#ffd1e8'/>
+      <stop offset='100%' stop-color='#d9ccff'/>
+    </linearGradient>
+  </defs>
+  <rect width='640' height='420' fill='url(#bg)'/>
+  <circle cx='180' cy='180' r='70' fill='#ff4d9c' opacity='0.75'/>
+  <circle cx='280' cy='160' r='65' fill='#7c3aed' opacity='0.65'/>
+  <circle cx='360' cy='230' r='78' fill='#ff9ec9' opacity='0.8'/>
+  <circle cx='460' cy='175' r='66' fill='#7c3aed' opacity='0.55'/>
+  <path d='M180 250 C210 315, 280 330, 310 390' stroke='#8c8c8c' stroke-width='3' fill='none'/>
+  <path d='M280 225 C290 300, 350 300, 360 390' stroke='#8c8c8c' stroke-width='3' fill='none'/>
+  <path d='M360 308 C355 335, 375 360, 390 390' stroke='#8c8c8c' stroke-width='3' fill='none'/>
+</svg>
