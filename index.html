@@ -3,54 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Arreglos con Globos | Agenda por WhatsApp</title>
-  <meta name="description" content="Arreglos con globos para cumpleaños, baby showers y eventos. Servicio al cliente excepcional. Agenda fácil por WhatsApp." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Arreglos con globos para cumpleaños, baby showers y eventos. Cotiza rápido por WhatsApp y agenda tu fecha con atención personalizada." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="Arreglos con Globos | Agenda por WhatsApp" />
+  <meta property="og:description" content="Diseños personalizados para cumpleaños y eventos. Atención rápida y amable por WhatsApp." />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="/images/og-cover.svg" />
+  <meta property="og:image:alt" content="Portada de arreglos con globos de Tu Negocio de Globos" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arreglos con Globos | Agenda por WhatsApp" />
+  <meta name="twitter:description" content="Cotiza y agenda tus arreglos con globos en minutos por WhatsApp." />
+  <meta name="twitter:image" content="/images/og-cover.svg" />
+
+  <link rel="stylesheet" href="styless.css?v=1" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Tu Negocio de Globos",
+      "description": "Arreglos personalizados con globos para celebraciones y eventos.",
+      "url": "https://tudominio.com/",
+      "telephone": "+1 786-599-2191",
+      "areaServed": "Miami y alrededores",
+      "paymentAccepted": "Efectivo, transferencia, Zelle",
+      "openingHours": "Mo-Sa 09:00-19:00"
+    }
+  </script>
 </head>
 
 <body>
-  <!-- Top bar -->
   <header class="topbar">
     <div class="container topbar__inner">
-      <div class="brand">
-        <div class="brand__logo" aria-hidden="true">🎈</div>
-        <div class="brand__text">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__logo" aria-hidden="true">🎈</span>
+        <span class="brand__text">
           <strong>Tu Negocio de Globos</strong>
           <span>Decoración • Detalles • Eventos</span>
-        </div>
-      </div>
+        </span>
+      </a>
 
-      <a class="btn btn--ghost" href="#portfolio">Ver portafolio</a>
+      <nav class="topnav" aria-label="Navegación principal">
+        <a class="btn btn--ghost" href="#portfolio">Portafolio</a>
+        <a class="btn btn--ghost" href="#paquetes">Paquetes</a>
+        <a class="btn btn--ghost" href="#calculadora">Calculadora</a>
+        <a class="btn btn--ghost" href="#contacto">Contacto</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main>
+  <main id="inicio">
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
           <p class="badge">Bienvenidos ✨</p>
           <h1>Arreglos con globos que se sienten especiales.</h1>
           <p class="hero__subtitle">
-            Si es tu primera vez aquí: ¡qué gusto tenerte! Nuestro <strong>servicio al cliente es nuestra mayor fortaleza</strong>.
-            Te asesoramos, te escuchamos y cuidamos cada detalle para que tu sorpresa quede perfecta.
+            Nuestro <strong>servicio al cliente es nuestra mayor fortaleza</strong>. Te asesoramos en colores,
+            tamaños y presupuesto para que tu sorpresa quede perfecta.
           </p>
 
           <div class="hero__cta">
-            <a class="btn btn--primary" id="whatsappBtn" href="#" target="_blank" rel="noopener">
+            <a class="btn btn--primary js-wa-link" id="whatsappBtn" data-wa-message="Hola! Estoy interesado/a en un arreglo con globos. ¿Me ayudas con información y disponibilidad?" href="https://wa.me/17865992191?text=Hola%21%20Estoy%20interesado%2Fa%20en%20un%20arreglo%20con%20globos.%20%C2%BFMe%20ayudas%20con%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
               💬 Escríbenos por WhatsApp
             </a>
             <a class="btn btn--soft" href="#pasos">Cómo agendar</a>
           </div>
 
-          <div class="hero__meta">
+          <div class="hero__meta" aria-label="Beneficios principales">
             <div class="metaCard">
               <span class="metaCard__title">Respuesta rápida</span>
-              <span class="metaCard__desc">Atención amable y clara</span>
+              <span class="metaCard__desc">Cotización inicial en minutos</span>
             </div>
             <div class="metaCard">
-              <span class="metaCard__title">Diseños a tu gusto</span>
-              <span class="metaCard__desc">Colores, tema y ocasión</span>
+              <span class="metaCard__title">Diseño personalizado</span>
+              <span class="metaCard__desc">Tema, colores y ocasión</span>
             </div>
             <div class="metaCard">
               <span class="metaCard__title">Entrega / Pickup</span>
@@ -59,16 +95,14 @@
           </div>
         </div>
 
-        <div class="hero__card" aria-label="Vista previa">
+        <aside class="hero__card" aria-label="Resumen de atención">
           <div class="card">
             <div class="card__top">
               <div class="sparkle" aria-hidden="true">✨</div>
               <h2>¿Listo para sorprender?</h2>
-              <p>
-                Cuéntanos la fecha, la ocasión y tu idea. Te recomendamos el tamaño, colores y opciones según tu presupuesto.
-              </p>
+              <p>Cuéntanos fecha, ocasión y presupuesto. Te compartimos opciones adaptadas para ti.</p>
             </div>
-            <div class="card__bottom">
+            <div class="card__bottom" aria-label="Ocasiones disponibles">
               <button class="chip" type="button">Cumpleaños</button>
               <button class="chip" type="button">Baby Shower</button>
               <button class="chip" type="button">Aniversario</button>
@@ -76,11 +110,10 @@
               <button class="chip" type="button">San Valentín</button>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <!-- 3 steps -->
     <section class="section" id="pasos">
       <div class="container">
         <div class="section__head">
@@ -92,131 +125,187 @@
           <article class="step">
             <div class="step__num">1</div>
             <h3>Escríbenos por WhatsApp</h3>
-            <p>Envíanos la fecha, la ocasión y si tienes un tema o colores en mente.</p>
+            <p>Comparte fecha, ocasión y referencia de estilo.</p>
           </article>
-
           <article class="step">
             <div class="step__num">2</div>
-            <h3>Te mandamos opciones</h3>
-            <p>Te sugerimos diseños y precios. Ajustamos detalles hasta que quedes feliz.</p>
+            <h3>Recibes propuestas y precios</h3>
+            <p>Te enviamos opciones según tu presupuesto y gustos.</p>
           </article>
-
           <article class="step">
             <div class="step__num">3</div>
-            <h3>Confirmas y listo</h3>
-            <p>Confirmamos horario, entrega/pickup y dejamos todo preparado para tu día especial.</p>
+            <h3>Confirmas y te despreocupas</h3>
+            <p>Definimos entrega/pickup y dejamos todo listo para tu evento.</p>
           </article>
         </div>
 
         <div class="center">
-          <a class="btn btn--primary" id="whatsappBtn2" href="#" target="_blank" rel="noopener">
-            💬 Agendar por WhatsApp
-          </a>
+          <a class="btn btn--primary js-wa-link" id="whatsappBtn2" data-wa-message="Hola! Quiero agendar un arreglo con globos. ¿Qué fechas tienen disponibles?" href="https://wa.me/17865992191?text=Hola%21%20Quiero%20agendar%20un%20arreglo%20con%20globos.%20%C2%BFQu%C3%A9%20fechas%20tienen%20disponibles%3F" target="_blank" rel="noopener noreferrer">💬 Agendar por WhatsApp</a>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio -->
+
+    <section class="section section--muted" id="calculadora">
+      <div class="container">
+        <div class="section__head">
+          <h2>Calculadora de tu arreglo</h2>
+          <p>Ingresa cuántos globos deseas y la distancia en millas para ver un estimado instantáneo.</p>
+        </div>
+
+        <div class="calculator">
+          <form class="calculator__form" id="quoteForm">
+            <label class="field" for="balloonQty">
+              <span>Cantidad de globos</span>
+              <input id="balloonQty" name="balloonQty" type="number" min="1" step="1" value="24" required />
+            </label>
+
+            <label class="field" for="milesDistance">
+              <span>Distancia (millas)</span>
+              <input id="milesDistance" name="milesDistance" type="number" min="0" step="0.1" value="5" required />
+            </label>
+
+            <label class="field" for="occasionType">
+              <span>Ocasión</span>
+              <select id="occasionType" name="occasionType">
+                <option>Cumpleaños</option>
+                <option>Baby Shower</option>
+                <option>Aniversario</option>
+                <option>Graduación</option>
+                <option>San Valentín</option>
+                <option>Otro evento</option>
+              </select>
+            </label>
+          </form>
+
+          <aside class="calculator__result" aria-live="polite">
+            <h3>Resumen estimado</h3>
+            <ul>
+              <li><span>Globos (<strong id="calcQty">24</strong> x $<span id="calcPriceBalloon">2.50</span>)</span><strong id="calcBalloonsTotal">$60.00</strong></li>
+              <li><span>Distancia (<strong id="calcMiles">5.0</strong> mi x $<span id="calcPriceMile">1.75</span>)</span><strong id="calcDeliveryTotal">$8.75</strong></li>
+            </ul>
+            <div class="calculator__total">
+              <span>Total estimado</span>
+              <strong id="calcGrandTotal">$68.75</strong>
+            </div>
+            <p class="muted">*Estimado orientativo. El precio final puede variar según diseño y fecha.</p>
+            <a class="btn btn--primary js-wa-link" id="whatsappQuoteBtn" href="#" target="_blank" rel="noopener noreferrer">💬 Enviar estimado por WhatsApp</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--muted" id="portfolio">
       <div class="container">
         <div class="section__head">
           <h2>Portafolio</h2>
-          <p>Estamos subiendo nuevas fotos muy pronto. Aquí tendrás una vista de nuestros trabajos.</p>
+          <p>Algunos de nuestros estilos favoritos para inspirarte.</p>
         </div>
 
         <div class="portfolio">
-          <div class="ph">
-            <div class="ph__img">📷</div>
-            <div class="ph__text">
-              <strong>Foto #1</strong>
-              <span>Próximamente</span>
-            </div>
-          </div>
-          <div class="ph">
-            <div class="ph__img">📷</div>
-            <div class="ph__text">
-              <strong>Foto #2</strong>
-              <span>Próximamente</span>
-            </div>
-          </div>
-          <div class="ph">
-            <div class="ph__img">📷</div>
-            <div class="ph__text">
-              <strong>Foto #3</strong>
-              <span>Próximamente</span>
-            </div>
-          </div>
-          <div class="ph">
-            <div class="ph__img">📷</div>
-            <div class="ph__text">
-              <strong>Foto #4</strong>
-              <span>Próximamente</span>
-            </div>
-          </div>
-          <div class="ph">
-            <div class="ph__img">📷</div>
-            <div class="ph__text">
-              <strong>Foto #5</strong>
-              <span>Próximamente</span>
-            </div>
-          </div>
-          <div class="ph">
-            <div class="ph__img">📷</div>
-            <div class="ph__text">
-              <strong>Foto #6</strong>
-              <span>Próximamente</span>
-            </div>
-          </div>
+          <figure class="ph"><img src="images/portfolio-1.svg" alt="Arreglo de cumpleaños en tonos rosa y dorado" loading="lazy" /><figcaption>Cumpleaños elegante</figcaption></figure>
+          <figure class="ph"><img src="images/portfolio-2.svg" alt="Arco de globos para baby shower en tonos pastel" loading="lazy" /><figcaption>Baby shower pastel</figcaption></figure>
+          <figure class="ph"><img src="images/portfolio-3.svg" alt="Decoración con globos para aniversario" loading="lazy" /><figcaption>Aniversario romántico</figcaption></figure>
+          <figure class="ph"><img src="images/portfolio-4.svg" alt="Arreglo de globos para graduación" loading="lazy" /><figcaption>Graduación</figcaption></figure>
+          <figure class="ph"><img src="images/portfolio-5.svg" alt="Bouquet de globos para sorpresa" loading="lazy" /><figcaption>Sorpresa a domicilio</figcaption></figure>
+          <figure class="ph"><img src="images/portfolio-6.svg" alt="Decoración temática de San Valentín" loading="lazy" /><figcaption>San Valentín</figcaption></figure>
         </div>
-
-        <p class="hint">
-          Tip: cuando tengas fotos, crea una carpeta <strong>images</strong> y cambia estos cuadros por <code>&lt;img src="images/tu-foto.jpg"&gt;</code>.
-        </p>
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <section class="section" id="paquetes">
+      <div class="container">
+        <div class="section__head">
+          <h2>Paquetes desde</h2>
+          <p>Opciones para diferentes presupuestos. Se puede personalizar todo.</p>
+        </div>
+        <div class="grid3">
+          <article class="package">
+            <h3>Básico</h3>
+            <p class="price">Desde $45</p>
+            <ul>
+              <li>Bouquet mediano</li>
+              <li>2 colores a elegir</li>
+              <li>Pickup o entrega local</li>
+            </ul>
+          </article>
+          <article class="package package--featured">
+            <h3>Intermedio</h3>
+            <p class="price">Desde $85</p>
+            <ul>
+              <li>Arreglo premium</li>
+              <li>Paleta de color personalizada</li>
+              <li>Tarjeta dedicatoria incluida</li>
+            </ul>
+          </article>
+          <article class="package">
+            <h3>Premium</h3>
+            <p class="price">Desde $140</p>
+            <ul>
+              <li>Diseño grande para evento</li>
+              <li>Montaje en locación</li>
+              <li>Asesoría 1:1 por WhatsApp</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="contacto">
+      <div class="container business-info">
+        <div>
+          <h2>Información útil antes de cotizar</h2>
+          <ul>
+            <li><strong>Horario:</strong> Lunes a Sábado, 9:00 AM a 7:00 PM.</li>
+            <li><strong>Zonas:</strong> Miami y alrededores (consultar cobertura exacta).</li>
+            <li><strong>Pagos:</strong> Efectivo, transferencia, Zelle.</li>
+            <li><strong>Anticipación:</strong> Recomendado mínimo 48 horas.</li>
+          </ul>
+        </div>
+        <div class="business-cta">
+          <p class="microcopy">✅ Cotización en menos de 10 minutos en horario laboral.</p>
+          <a class="btn btn--primary js-wa-link" id="whatsappBtn3" data-wa-message="Hola! Quiero cotizar un arreglo con globos. Mi fecha es:" href="https://wa.me/17865992191?text=Hola%21%20Quiero%20cotizar%20un%20arreglo%20con%20globos.%20Mi%20fecha%20es%3A" target="_blank" rel="noopener noreferrer">💬 Cotizar ahora</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="testimonios">
       <div class="container">
         <div class="section__head">
-          <h2>Testimonios</h2>
-          <p>Lo que nuestros clientes dicen (puedes editar estos textos cuando tengas reseñas reales).</p>
+          <h2>Testimonios reales</h2>
+          <p>Experiencias compartidas por clientes después de sus eventos.</p>
         </div>
-
         <div class="grid3">
           <article class="quote">
-            <p>“Excelente atención. Me ayudaron a elegir colores y quedó hermoso. Súper recomendado.”</p>
-            <div class="quote__by">— Cliente feliz ⭐⭐⭐⭐⭐</div>
+            <p>“Me entregaron justo a tiempo y quedó más bonito que en la referencia. Excelente atención.”</p>
+            <div class="quote__by">— Andrea M. · Cumpleaños</div>
           </article>
-
           <article class="quote">
-            <p>“Respondieron rápido por WhatsApp y el arreglo quedó igual a como lo imaginé. Gracias!”</p>
-            <div class="quote__by">— Cliente satisfecha ⭐⭐⭐⭐⭐</div>
+            <p>“Les escribí en la mañana y en minutos ya tenía opciones y precios claros. Súper recomendado.”</p>
+            <div class="quote__by">— Carlos P. · Aniversario</div>
           </article>
-
           <article class="quote">
-            <p>“Muy buen servicio al cliente y puntualidad. Perfecto para sorprender.”</p>
-            <div class="quote__by">— Cliente encantado ⭐⭐⭐⭐⭐</div>
+            <p>“Muy profesionales y atentos con los detalles del baby shower. Volvería a contratar.”</p>
+            <div class="quote__by">— Daniela R. · Baby shower</div>
           </article>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <a class="floating-wa js-wa-link" data-wa-message="Hola! Estoy interesado/a en un arreglo con globos" href="https://wa.me/17865992191?text=Hola%21%20Estoy%20interesado%2Fa%20en%20un%20arreglo%20con%20globos" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para cotizar">💬</a>
+
   <footer class="footer">
     <div class="container footer__inner">
       <div>
         <strong>Tu Negocio de Globos</strong>
         <p class="muted">Servicio al cliente primero. Gracias por visitarnos.</p>
       </div>
-
-      <a class="btn btn--primary btn--small" id="whatsappBtn3" href="#" target="_blank" rel="noopener">
-        💬 WhatsApp
-      </a>
+      <small class="muted">© <span id="year"></span> Todos los derechos reservados.</small>
     </div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

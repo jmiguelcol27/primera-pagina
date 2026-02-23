@@ -1,0 +1,2 @@
+/* Compatibilidad: algunos despliegues apuntan a styless.css */
+@import url("./styles.css");
