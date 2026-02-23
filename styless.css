@@ -1,0 +1,2 @@
+/* Archivo de compatibilidad (por si algún deploy apunta a styless.css) */
+@import url("./styles.css");
