@@ -421,6 +421,50 @@ button:focus-visible {
   padding: 18px;
 }
 
+}
+
+/* Accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(124, 58, 237, 0.55);
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero__grid,
+  .business-info,
+  .grid3,
+  .portfolio,
+  .hero__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar__inner { min-height: auto; padding: 12px 0; }
+  .footer__inner { flex-direction: column; align-items: flex-start; }
+}
+
+@media (min-width: 981px) {
+  .floating-wa { display: none; }
+}
+
+/* Calculator */
+.calculator {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.calculator__form,
+.calculator__result {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+  padding: 18px;
+}
+
 .calculator__form {
   display: grid;
   gap: 12px;
@@ -438,6 +482,8 @@ button:focus-visible {
 
 .field input,
 .field select {
+.field select,
+.field textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -445,6 +491,12 @@ button:focus-visible {
   font: inherit;
   color: var(--text);
   background: #fff;
+}
+
+.field textarea {
+  min-height: 140px;
+  line-height: 1.5;
+  resize: vertical;
 }
 
 .calculator__result h3 {
