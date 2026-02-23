@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Balloonie | Arreglos con Globos y WhatsApp</title>
+  <title>Arreglos con Globos | Agenda por WhatsApp</title>
   <meta name="description" content="Arreglos con globos para cumpleaños, baby showers y eventos. Cotiza rápido por WhatsApp y agenda tu fecha con atención personalizada." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="/" />
@@ -12,15 +12,15 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:title" content="Balloonie | Arreglos con Globos y WhatsApp" />
+  <meta property="og:title" content="Arreglos con Globos | Agenda por WhatsApp" />
   <meta property="og:description" content="Diseños personalizados para cumpleaños y eventos. Atención rápida y amable por WhatsApp." />
   <meta property="og:url" content="/" />
   <meta property="og:image" content="/images/og-cover.svg" />
-  <meta property="og:image:alt" content="Portada de Balloonie, arreglos creativos con globos" />
+  <meta property="og:image:alt" content="Portada de arreglos con globos de Tu Negocio de Globos" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Balloonie | Arreglos con Globos y WhatsApp" />
+  <meta name="twitter:title" content="Arreglos con Globos | Agenda por WhatsApp" />
   <meta name="twitter:description" content="Cotiza y agenda tus arreglos con globos en minutos por WhatsApp." />
   <meta name="twitter:image" content="/images/og-cover.svg" />
 
@@ -30,7 +30,7 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Balloonie",
+      "name": "Tu Negocio de Globos",
       "description": "Arreglos personalizados con globos para celebraciones y eventos.",
       "url": "https://tudominio.com/",
       "telephone": "+1 786-599-2191",
@@ -47,7 +47,7 @@
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
         <span class="brand__logo" aria-hidden="true">🎈</span>
         <span class="brand__text">
-          <strong>Balloonie</strong>
+          <strong>Tu Negocio de Globos</strong>
           <span>Decoración • Detalles • Eventos</span>
         </span>
       </a>
@@ -150,14 +150,14 @@
       <div class="container">
         <div class="section__head">
           <h2>Calculadora de tu arreglo</h2>
-          <p>Describe el tipo de arreglo que necesitas y la distancia en millas para recibir un estimado.</p>
+          <p>Ingresa cuántos globos deseas y la distancia en millas para ver un estimado instantáneo.</p>
         </div>
 
         <div class="calculator">
           <form class="calculator__form" id="quoteForm">
-            <label class="field" for="eventDetails">
-              <span>Tipo de arreglo que necesitas</span>
-              <textarea id="eventDetails" name="eventDetails" rows="5" placeholder="Describe lo que necesitas para tu evento (tema, colores, fecha, presupuesto, etc.)" required></textarea>
+            <label class="field" for="balloonQty">
+              <span>Cantidad de globos</span>
+              <input id="balloonQty" name="balloonQty" type="number" min="1" step="1" value="24" required />
             </label>
 
             <label class="field" for="milesDistance">
@@ -181,14 +181,14 @@
           <aside class="calculator__result" aria-live="polite">
             <h3>Resumen estimado</h3>
             <ul>
-              <li><span>Tarifa base de diseño</span><strong id="calcBaseTotal">$35.00</strong></li>
+              <li><span>Globos (<strong id="calcQty">24</strong> x $<span id="calcPriceBalloon">2.50</span>)</span><strong id="calcBalloonsTotal">$60.00</strong></li>
               <li><span>Distancia (<strong id="calcMiles">5.0</strong> mi x $<span id="calcPriceMile">1.75</span>)</span><strong id="calcDeliveryTotal">$8.75</strong></li>
             </ul>
             <div class="calculator__total">
               <span>Total estimado</span>
-              <strong id="calcGrandTotal">$43.75</strong>
+              <strong id="calcGrandTotal">$68.75</strong>
             </div>
-            <p class="muted">*Estimado orientativo. El precio final puede variar según complejidad del arreglo y fecha.</p>
+            <p class="muted">*Estimado orientativo. El precio final puede variar según diseño y fecha.</p>
             <a class="btn btn--primary js-wa-link" id="whatsappQuoteBtn" href="#" target="_blank" rel="noopener noreferrer">💬 Enviar estimado por WhatsApp</a>
           </aside>
         </div>
@@ -298,7 +298,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div>
-        <strong>Balloonie</strong>
+        <strong>Tu Negocio de Globos</strong>
         <p class="muted">Servicio al cliente primero. Gracias por visitarnos.</p>
       </div>
       <small class="muted">© <span id="year"></span> Todos los derechos reservados.</small>
