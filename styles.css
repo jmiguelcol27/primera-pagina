@@ -437,7 +437,8 @@ button:focus-visible {
 }
 
 .field input,
-.field select {
+.field select,
+.field textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -445,6 +446,12 @@ button:focus-visible {
   font: inherit;
   color: var(--text);
   background: #fff;
+}
+
+.field textarea {
+  min-height: 140px;
+  line-height: 1.5;
+  resize: vertical;
 }
 
 .calculator__result h3 {

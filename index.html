@@ -150,11 +150,15 @@
       <div class="container">
         <div class="section__head">
           <h2>Calculadora de tu arreglo</h2>
+          <p>Describe el tipo de arreglo que necesitas y la distancia en millas para recibir un estimado.</p>
           <p>Ingresa cuántos globos deseas y la distancia en millas para ver un estimado instantáneo.</p>
         </div>
 
         <div class="calculator">
           <form class="calculator__form" id="quoteForm">
+            <label class="field" for="eventDetails">
+              <span>Tipo de arreglo que necesitas</span>
+              <textarea id="eventDetails" name="eventDetails" rows="5" placeholder="Describe lo que necesitas para tu evento (tema, colores, fecha, presupuesto, etc.)" required></textarea>
             <label class="field" for="balloonQty">
               <span>Cantidad de globos</span>
               <input id="balloonQty" name="balloonQty" type="number" min="1" step="1" value="24" required />
@@ -181,11 +185,14 @@
           <aside class="calculator__result" aria-live="polite">
             <h3>Resumen estimado</h3>
             <ul>
-              <li><span>Globos (<strong id="calcQty">24</strong> x $<span id="calcPriceBalloon">2.50</span>)</span><strong id="calcBalloonsTotal">$60.00</strong></li>
+              <li><span>Tarifa base de diseño</span><strong id="calcBaseTotal">$35.00</strong></li>
               <li><span>Distancia (<strong id="calcMiles">5.0</strong> mi x $<span id="calcPriceMile">1.75</span>)</span><strong id="calcDeliveryTotal">$8.75</strong></li>
             </ul>
             <div class="calculator__total">
               <span>Total estimado</span>
+              <strong id="calcGrandTotal">$43.75</strong>
+            </div>
+            <p class="muted">*Estimado orientativo. El precio final puede variar según complejidad del arreglo y fecha.</p>
               <strong id="calcGrandTotal">$68.75</strong>
             </div>
             <p class="muted">*Estimado orientativo. El precio final puede variar según diseño y fecha.</p>
